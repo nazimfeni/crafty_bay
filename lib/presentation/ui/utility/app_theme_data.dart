@@ -4,8 +4,9 @@ import 'app_colors.dart';
 
 class AppThemeData{
 static ThemeData lightThemeData = ThemeData(
-    primarySwatch: MaterialColor(
-        AppColors.primaryColor.value, AppColors.colorSwatch),
+    // primarySwatch: MaterialColor(
+    //     AppColors.primaryColor.value, AppColors.colorSwatch),
+  // colorSchemeSeed: AppColors.primaryColor,
     progressIndicatorTheme:
     const ProgressIndicatorThemeData(color: AppColors.primaryColor),
     inputDecorationTheme: InputDecorationTheme(
@@ -61,6 +62,11 @@ static ThemeData lightThemeData = ThemeData(
 
             ),
             foregroundColor: Colors.white
+        )
+    ),
+    textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(
+          foregroundColor:AppColors.primaryColor,
         )
     )
 );
