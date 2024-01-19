@@ -1,7 +1,6 @@
 import 'package:crafty_bay/presentation/ui/utility/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import '../../widgets/app_logo.dart';
 import 'complete_profile_screen.dart';
@@ -79,9 +78,9 @@ class VerifyOTPScreen extends StatelessWidget {
               ),
               RichText(
                   text:
-                      TextSpan(style: TextStyle(color: Colors.grey), children: [
+                      const TextSpan(style: TextStyle(color: Colors.grey), children: [
                 TextSpan(text: 'This code will expire'),
-                //TODO make the timer workable
+                // TODO make the timer workable
                 TextSpan(
                     text: '120s',
                     style: TextStyle(

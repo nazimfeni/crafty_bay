@@ -2,6 +2,7 @@ import 'package:crafty_bay/presentation/ui/screens/auth/splash_screen.dart';
 import 'package:crafty_bay/presentation/ui/utility/app_theme_data.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:crafty_bay/controller_binder.dart';
 
 class CraftyBay extends StatelessWidget {
   const CraftyBay({Key? key}) : super(key: key);
@@ -11,6 +12,7 @@ class CraftyBay extends StatelessWidget {
     return GetMaterialApp(
       theme: AppThemeData.lightThemeData,
       home: const SplashScreen(),
+      initialBinding: ControllerBinder(),
     );
   }
 }
