@@ -1,13 +1,11 @@
+import 'package:crafty_bay/presentation/ui/utility/assets_path.dart';
 import 'package:flutter/material.dart';
 
-import '../utility/assets_path.dart';
-
 class AppLogo extends StatelessWidget {
-  const AppLogo({Key? key, this.width, this.height}) : super(key: key);
+  const AppLogo({super.key, this.width, this.height});
 
   final double? width;
   final double? height;
-
 
   @override
   Widget build(BuildContext context) {

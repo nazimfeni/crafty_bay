@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class CircleIconButton extends StatelessWidget {
@@ -18,8 +17,8 @@ class CircleIconButton extends StatelessWidget {
       borderRadius: BorderRadius.circular(15),
       child: CircleAvatar(
         radius: 15,
-        child: Icon(iconData, color: Colors.grey, size: 20),
         backgroundColor: Colors.grey.shade300,
+        child: Icon(iconData, color: Colors.grey, size: 20,),
       ),
     );
   }
